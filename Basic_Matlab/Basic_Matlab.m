@@ -21,6 +21,11 @@ y=0:0.5:5;  % Create a vector from 0 to 5 with 0.1 increment
 A=magic(3);
 A_verify=sum(A);
 
+%% Matrix of zeros 
+
+zero_vector=zeros(5,1);
+
+
 
 %% Question 11
 t=0:0.01:3*pi; %Time range
