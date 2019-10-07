@@ -13,6 +13,15 @@ close all;
 x=1:10;     % Create a vector from 1 to 10
 y=0:0.5:5;  % Create a vector from 0 to 5 with 0.1 increment
 
+%% Matrix Creation
+% The magic() function creates a matrix with sum of all the rows and
+% columns is the same the argument of the magic() should be greater than or
+% equal to 3
+
+A=magic(3);
+A_verify=sum(A);
+
+
 %% Question 11
 t=0:0.01:3*pi; %Time range
 
