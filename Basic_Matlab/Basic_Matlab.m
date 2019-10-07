@@ -8,6 +8,11 @@ clc;
 clear all;
 close all;
 
+%% Vector Creation
+
+x=1:10;     % Create a vector from 1 to 10
+y=0:0.5:5;  % Create a vector from 0 to 5 with 0.1 increment
+
 %% Question 11
 t=0:0.01:3*pi; %Time range
 
