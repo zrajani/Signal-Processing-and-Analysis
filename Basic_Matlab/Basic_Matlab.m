@@ -1,3 +1,9 @@
+% Program Name: Basic Matlab Commands
+% Author: Zain Rajani
+% Created on: September 17, 2019
+% Last Edited on: October 07, 2019
+
+%%Initialize Screen
 clc;
 clear all;
 close all;
