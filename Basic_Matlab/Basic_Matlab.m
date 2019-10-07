@@ -25,7 +25,17 @@ A_verify=sum(A);
 
 zero_vector=zeros(5,1);
 
+%% Matrix of random numbers
 
+% Matrix of random numbers uniformly distributed 
+
+random_number_matrix = rand(1,5);  
+
+% Matrix of 1 row and 5 columns having random numbers normally distributted
+
+random_number_matrix_norm= randn(1,5);
+
+%% Transpose of Matrix
 
 %% Question 11
 t=0:0.01:3*pi; %Time range
