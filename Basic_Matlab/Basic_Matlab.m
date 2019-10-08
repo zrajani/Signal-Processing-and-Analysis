@@ -88,7 +88,9 @@ matrix_elementwise_multiply=matrix_1.*matrix_2;
 % Matrix Multiplication
 matrix_multiply=matrix_1*matrix_2;
 
+%% Vector of Complex numbers
 
+complex_vector=[1+34i 5+7i 8+.99i 6+2.678983i];
 
 %% Question 11
 t=0:0.01:3*pi; %Time range
