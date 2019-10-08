@@ -92,6 +92,15 @@ matrix_multiply=matrix_1*matrix_2;
 
 complex_vector=[1+34i 5+7i 8+.99i 6+2.678983i];
 
+%% Concatenate matrices and multiply a row by an element of same matrix
+
+% Create a matrices 
+matrix_A=[1 2 3; 4 5 6; 7 8 9];
+matrix_B=magic(3);
+concatenate_matrix_1=[matrix_A matrix_B];  % Concatenate column-wise
+concatenate_matrix_2=[matrix_A;matrix_B];  % Concatenate row-wise
+
+
 %% Question 11
 t=0:0.01:3*pi; %Time range
 
