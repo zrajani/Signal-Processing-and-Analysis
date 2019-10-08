@@ -100,6 +100,9 @@ matrix_B=magic(3);
 concatenate_matrix_1=[matrix_A matrix_B];  % Concatenate column-wise
 concatenate_matrix_2=[matrix_A;matrix_B];  % Concatenate row-wise
 
+% Multiply a row with an element of that matrix
+
+matrix_C=[matrix_A(1,:); matrix_A(2,2)*matrix_A(2,:); matrix_A(3,:)];
 
 %% Question 11
 t=0:0.01:3*pi; %Time range
