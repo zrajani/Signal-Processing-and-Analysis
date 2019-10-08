@@ -74,6 +74,20 @@ verify_cross_2=dot(rand_b,cross_rand);
 
 invert_rand_a=inv(rand_a);
 
+%% Multiplication Element-wise and by a scalar;
+% Creates a matrix of all ones having 3x3 dimensions
+mat_1=ones(3,3);
+% Scalar multiplication by 2
+scalar_multi=2*mat_1;
+% Create 2 sample matrices
+matrix_1=magic(3);
+matrix_2=rand(3);      % Random number matrix uniformly distributed
+
+% Element-wise Multiplication
+matrix_elementwise_multiply=matrix_1.*matrix_2;
+% Matrix Multiplication
+matrix_multiply=matrix_1*matrix_2;
+
 
 
 %% Question 11
