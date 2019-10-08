@@ -53,6 +53,22 @@ C_sign_transpose=C';
 % no complex conjugate
 C_transpose=C.';
 
+%% Cross and Dot Product of Matrix
+% Create a uniformly independent matrix of random numbers
+% The syntax says that randi(max_integer,dimension_of_matrix)
+rand_a=randi(22,3);
+rand_b=randi(24,3);
+% Generates the cross product of two matrices
+cross_rand=cross(rand_a,rand_b);
+
+% Verify the cross product by getting the dot product 
+% The cross product is true given that dot product of the answer and the
+% vector is equal to 0
+verify_cross_1=dot(rand_a,cross_rand);
+verify_cross_2=dot(rand_b,cross_rand);
+
+
+
 %% Question 11
 t=0:0.01:3*pi; %Time range
 
