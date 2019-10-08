@@ -67,6 +67,13 @@ cross_rand=cross(rand_a,rand_b);
 verify_cross_1=dot(rand_a,cross_rand);
 verify_cross_2=dot(rand_b,cross_rand);
 
+%% Inverse of Matrix
+% The following function will perform inverse of matrix using inv() if the
+% matrix is not singular and square then use pinv()
+% For this we will invert the rand_a matrix which was created earlier
+
+invert_rand_a=inv(rand_a);
+
 
 
 %% Question 11
