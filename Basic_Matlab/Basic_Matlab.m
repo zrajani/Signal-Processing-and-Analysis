@@ -146,8 +146,3 @@ xticks([0 pi/2 pi 3*pi/2 2*pi])
 xticklabels({'0','\pi/2','\pi','3\pi/2','2\pi'});
 xtickangle(45);
 axis ([0 6.2832 -2 2]);
-<<<<<<< HEAD
-hold off;
-=======
-hold off;
->>>>>>> refs/remotes/origin/master
