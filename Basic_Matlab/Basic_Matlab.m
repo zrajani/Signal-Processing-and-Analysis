@@ -35,7 +35,23 @@ random_number_matrix = rand(1,5);
 
 random_number_matrix_norm= randn(1,5);
 
-%% Transpose of Matrix
+%% Transpose of a matrix
+
+% Matrix of 4x4 creation
+B=magic(4);
+
+%Usual transpose of matrix
+B_transpose=B';
+
+% Matrix of complex numbers
+C=[1 3 22+0.7i 9+8i; 22 07 24+12i 19+93i; 56 8+92i 15+0.3i 29+0.3i]; 
+
+% Transpose of complex matrix which form the complex conjugate 
+C_sign_transpose=C';
+
+% Transpose of complex matrix the '.' operator takes just the transpose and
+% no complex conjugate
+C_transpose=C.';
 
 %% Question 11
 t=0:0.01:3*pi; %Time range
