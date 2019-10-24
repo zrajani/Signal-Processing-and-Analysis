@@ -25,7 +25,7 @@
 
 /*
  * simple Fibonacci sequence generator function, using recursion
- * */
+ */
 size_t fib(size_t k)
 {
 	if (k==0)
