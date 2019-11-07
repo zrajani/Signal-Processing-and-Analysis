@@ -1,3 +1,6 @@
-# Audio Signal Processing using Matlab 2019a
+# Audio Signal Processing
+
+Software: Matlab
+Version: 2019a
 
 ![Audio Output](audio_plot.png)
