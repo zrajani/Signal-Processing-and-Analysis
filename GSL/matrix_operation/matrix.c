@@ -45,18 +45,18 @@ gsl_matrix *embt_mm(const gsl_matrix *U,const gsl_matrix *V, size_t N)
 {
 	gsl_matrix *W=gsl_matrix_calloc(N,N);
 	double sum=0;
-		for (size_t i=0;i!=N;i++)
+	for (size_t i=0;i!=N;i++)
+	{
+		for(size_t j=0;j!=N;j++)
+		{
+			for (size_t k=0;k!=N;k++)
 			{
-				for(size_t j=0;j!=N;j++)
-				{
-					for (size_t k=0;k!=N;k++)
-					{
-						sum=sum+gsl_matrix_get(U,i,k)*gsl_matrix_get(V,k,j);
-					}
-					gsl_matrix_set(W,i,j,(double)sum);
-					sum=0;
-				}
+				sum=sum+gsl_matrix_get(U,i,k)*gsl_matrix_get(V,k,j);
 			}
+			gsl_matrix_set(W,i,j,(double)sum);
+			sum=0;
+		}
+	}
 	return W;
 }
 
@@ -82,9 +82,9 @@ gsl_matrix *embt_m_print(const gsl_matrix *U, size_t N)
 gsl_matrix *embt_v_print(const gsl_vector *u, size_t N)
 {
 	for (int i = 0; i != N; ++i)
-			{
-				printf("%0.2f\n",gsl_vector_get(u, i));
-			}
+	{
+		printf("%0.2f\n",gsl_vector_get(u, i));
+	}
 }
 int main()
 {
