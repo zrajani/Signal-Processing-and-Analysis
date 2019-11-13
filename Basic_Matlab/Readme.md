@@ -7,5 +7,6 @@ The software is product of MatWorks and is avaliable at a cost for subscription.
 
 1. Created some periodic Signals and tried experimenting with them
 2. Implemented the function syntax in MATLAB  
+3. Discrete time signal
 
 -- Updated the files on September 2019. Updated shall be continued periodically
