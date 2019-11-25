@@ -96,7 +96,7 @@ x2=10+sqrt(10)*randn(1,10000);
 figure;
 [h2,x2out]=hist(x2,100);
 bar(x2out,h2);
-xlabel('Interval')l
+xlabel('Interval')
 ylabel('Samples');
 title('Histogram of sequence x_2(n) in 100 bins');
 
@@ -130,5 +130,15 @@ ylabel('Amplitude \rightarrow');
 
 %% Periodic Signal of Sine Wave and unit step function
 
-n2=[-16:16];
-x1=sin(0.1*pi*n2)*(unit
+n2=[0:11];
+x3=sin(0.1*pi*n2).*(unit_step(n2)-unit_step(n2-10));
+x3=x3'*ones(1,4);
+x3=(x3(:))';
+n3=[-12:35];
+
+stem(n3,x3,'filled');
+axis([min(n3)-1,max(n3)+1,min(x3)-0.5,max(x3)+0.5]);
+xlabel('n ----->'); ylabel('Amplitude');
+title('Sequence x_3(n)');
+ntick = [n3(1):4:n3(end)-3 n3(end)];
+set(gca,'XTickMode','manual','XTick',ntick);
