@@ -72,6 +72,51 @@ title('Plot e^{-0.05n}sin(0.1\pin+\pi/3)');
 xlabel('Discrete Time (n) \rightarrow');
 ylabel('Amplitude \rightarrow');
 
+%% Generate Random Sequences and Histogram
+
+clc;
+close all;
+
+n1=[0:100000-1];
+x1=2*rand(1,100000);
+[h1,x1out]=hist(x1,100);
+bar(x1out,h1);
+axis([-0.1 2.1 0 1200]);
+xlabel('Interval Time');
+ylabel('Amplitude or number of elements');
+title('Random number Genrator of x_1(n) with 100 bins');
+
+%% Random Number sequence with mean and variance
+
+clc;
+close all;
+
+n2=[1:100000];
+x2=10+sqrt(10)*randn(1,10000);
+figure;
+[h2,x2out]=hist(x2,100);
+bar(x2out,h2);
+xlabel('Interval')l
+ylabel('Samples');
+title('Histogram of sequence x_2(n) in 100 bins');
+
+%% Random Sequence for ummation sign
+
+clc;
+close all;
+
+y1=rand(1,100000)-0.5;
+y2=rand(1,100000)-0.5;
+y3=rand(1,100000)-0.5;
+y4=rand(1,100000)-0.5;
+x4=y1+y2+y3+y4;
+
+[h4,x4out]=hist(x4,100);
+bar(x4out,h4);
+xlabel('Interval');
+ylabel('Samples');
+title('Histogram Sequence for Summation sign with 100 bins');
+
 %% Periodic Signal 
 
 n1=[-12:12];
