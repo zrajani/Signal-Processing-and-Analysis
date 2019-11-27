@@ -100,7 +100,7 @@ xlabel('Interval')
 ylabel('Samples');
 title('Histogram of sequence x_2(n) in 100 bins');
 
-%% Random Sequence for ummation sign
+%% Random Sequence for Summation sign
 
 clc;
 close all;
