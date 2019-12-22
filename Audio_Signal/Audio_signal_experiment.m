@@ -107,3 +107,31 @@ play(inc_play);
 pause (audio_1_info.Duration);
 
 %% Flip the audio signals
+
+flip_audio=flipud(audio_2_data);
+sound(flip_audio);
+
+t1=0:seconds(1/audio_1_samplef):seconds(audio_1_info.Duration);
+t1 = t1(1:end-1);
+
+t2=0:seconds(1/audio_2_samplef):seconds(audio_2_info.Duration);
+t2 = t2(1:end-1);
+
+figure
+subplot(2,1,1)
+plot(t2,audio_2_data)
+title('Male Voice Data')
+xlabel('Time')
+ylabel('Audio Signal')
+
+subplot(2,1,2)
+plot(t2,flip_audio,'color','r')
+title('Flipped Male Voice Data')
+xlabel('Time')
+ylabel('Audio Signal')
+
+%% Sound Streching Signal 
+
+[audioIn,fs] = audioread("Counting-16-44p1-mono-15secs.wav");
+sound(audioIn,fs)
+audioOut = stretchAudio(audioIn,1.5);
