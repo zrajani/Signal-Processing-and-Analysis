@@ -6,4 +6,4 @@ Version: 2019a
 
 ![Audio Output](audio_plot.png)
 
-![Flipped Audio Signal](flipped_audio.png)
+![Flipped Audio Signal](flipped_audio.jpg)
