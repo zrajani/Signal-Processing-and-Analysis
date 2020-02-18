@@ -20,7 +20,7 @@
 	#include <gsl/gsl_randist.h>
 
 /*
- * FUNCTIONS
+ * Functions For matrix 
  */
 
 /*
