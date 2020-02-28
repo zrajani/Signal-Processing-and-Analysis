@@ -8,7 +8,7 @@ close all;
 %Range of n
 n1=-5:15;
 
-%Delta Function
+%Delta Function Example 
 
 yd=3*delta(n1+2)+2*delta(n1)-delta(n1-3)+5*delta(n1-7);
 
