@@ -1,3 +1,6 @@
+% Program to illustrate the concept of State Space
+
+% Poles, Zeros and Gain 
 a0=1z;
 a1=2;
 a2=3;
