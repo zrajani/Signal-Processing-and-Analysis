@@ -37,7 +37,7 @@ xlabel('k ---->');
 title('Real part of FFT');
 grid on;
  
-Q=imag(y);
+Q=imag(y); %Get imaginary part
 subplot(3,2,3);
 stem(t,Q);
 ylabel('Amplitude ---->');
