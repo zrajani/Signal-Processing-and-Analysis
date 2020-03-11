@@ -1,4 +1,7 @@
+%Author: Zain Rajani
+
 %% Calculating sum of arbitary numbers of sinusoidal terms 
+
 % The sum of arbitary sinusoidal terms is calculated by creating a function
 % and then calling it from the script or from command window
 
